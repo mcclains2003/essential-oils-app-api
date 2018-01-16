@@ -38,7 +38,7 @@ class API::OilsController < ApplicationController
   private
 
   def oil_params
-      params.require(:oil).permit(:name, :description, :uses, :fragrance_profile, :medical_properties)
+      params.require(:oil).permit(:name, :description, :uses, :fragrance_profile, :medical_properties, :count)
   end
 
   def set_oil
